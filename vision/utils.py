@@ -1,6 +1,6 @@
 import os, sys, time
 import torch
-import geoopt.manifolds.poincare.math as pmath_geo
+import geoopt as pmath_geo
 from torch.autograd import Variable
 import numpy as np
 import matplotlib
