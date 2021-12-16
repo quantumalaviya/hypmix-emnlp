@@ -130,7 +130,7 @@ def mixup_process(out, target_reweighted, lam):
     group = []
     for i in range(10):
       group.append([])
-    m = torch.unique(target_reweighted, dim = 0, return_inverse = True)[1]
+    m = torch.argmax(target_reweighted, 1)
     for i in range(len(m)):
       group[m[i]].append(i)
 
